@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400;1,700&family=Grey+Qo&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ysabeau+SC:wght@1..1000&display=swap');
+
+
+*,*::after,*::before{
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --primary-color : #C5ADC5;
+  --secondary-color : #B2B5E0;
+}
+
+
+body{
+  width:80%;
+  min-height: 100%;
+  margin: auto;
+  background: linear-gradient(60deg,#c9b2c5,#afb6e5);
+  font-family: "Andika", sans-serif;
+}

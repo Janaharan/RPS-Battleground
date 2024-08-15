@@ -1,0 +1,207 @@
+/* Keyframes for animations */
+@keyframes fade-down {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px) scale(0.9);
+    }    
+    100% {
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
+}
+
+@keyframes fade-up {
+    0% {
+        opacity: 0;
+        transform: translateY(30px) scale(0.9);
+    }    
+    100% {
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
+}
+
+/* Base styles */
+header {
+    background-color: #fff;
+    margin-top: 20px;
+    border-radius: 30vw;
+    overflow: hidden;
+    padding: 5px 0;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    animation: fade-down 0.5s;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 2.8em;
+    color: #282828;
+    font-weight: 600;
+}
+
+section {
+    display: flex;
+    margin-top: 50px;
+    gap: 8vw;
+    width: 100%;
+    animation: fade-up 0.5s;
+}
+
+.textContainer {
+    width: 50%;
+    padding: 10px 0;
+    font-size: 1.6em;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.textContainer h2 {
+    color: #333;
+}
+
+.textContainer h3 {
+    margin-top: 25px;
+    color: #fffefe;
+}
+
+.imageContainer {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    justify-content: space-between;
+}
+
+.imageContainer img {
+    width: max(10vw, 100px);
+    transition: 1s;
+    cursor: pointer;
+}
+
+.imageContainer img:hover {
+    width: max(11vw, 110px);
+}
+
+hr {
+    margin: 50px 0 30px 0;
+    height: 2px;
+    border: 1px solid #2d2d2d;
+    opacity: 0.3;
+    animation: fade-up 0.5s;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    color: #333;
+    text-decoration: underline;
+    animation: fade-down 0.5s;
+}
+
+.hero p {
+    margin: 10px 0;
+    font-size: 1.3rem;
+    color: #000;
+    font-weight: 500;
+    text-transform: capitalize;
+    animation: fade-down 0.5s;
+}
+
+.hero button {
+    margin: 20px 0;
+    padding: 15px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1.2em;
+    font-weight: 500;
+    animation: fade-up 0.5s;
+    transition: 0.7s;
+}
+
+.hero button:hover {
+    background-color: #333;
+    color: #fff;
+    border-radius: 25px;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    section {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .textContainer, .imageContainer {
+        width: 80%;
+    }
+
+    .textContainer {
+        font-size: 1.4em;
+    }
+
+    .imageContainer {
+        gap: 20px;
+    }
+
+    .imageContainer img {
+        width: 70px;
+    }
+
+    .hero h1 {
+        font-size: 2em;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+
+    .hero button {
+        font-size: 1em;
+        padding: 10px 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        margin-top: 10px;
+        padding: 10px 0;
+    }
+
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    .textContainer {
+        width: 90%;
+        font-size: 1.2em;
+    }
+
+    .imageContainer img {
+        width: 60px;
+    }
+
+    .hero h1 {
+        font-size: 1.8em;
+    }
+
+    .hero p {
+        font-size: 1.1rem;
+    }
+
+    .hero button {
+        font-size: 0.9em;
+        padding: 8px 12px;
+    }
+}
