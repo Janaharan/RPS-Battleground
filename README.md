@@ -2,6 +2,14 @@
 
 **RPS-Battleground** is a web-based game that brings a competitive twist to the classic Rock-Paper-Scissors game. Players can engage in multiple rounds, track their scores, and enjoy an enhanced UI that makes the game more interactive and fun.
 
+## Screenshots
+
+### Home Screen
+![RPS-Battleground Home](Screenshots/RPS-Home.png)
+
+### In-Game Screen
+![RPS-Battleground Game](Screenshots/RPS-Game.png)
+
 ## Features
 
 - **Classic Gameplay:** Rock beats Scissors, Scissors beat Paper, and Paper beats Rock.
